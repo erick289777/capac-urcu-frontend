@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/capac-urcu-frontend/precache-manifest.9881e47b0894293c416c9097de5eeea1.js"
+  "/capac-urcu-frontend/precache-manifest.8a05d317e59698ee063ef6bc933b6167.js"
 );
 
 self.addEventListener('message', (event) => {
