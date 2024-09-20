@@ -1,0 +1,90 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #273b42;
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #253e42;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navigation Menu */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 1.5em;
+}
+
+nav ul li a {
+    color: #fdfdfd;
+    text-decoration: none;
+    font-size: 1.125rem; /* Using rem for scalability */
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #bdc3c7;
+}
+
+/* Section Styling */
+section {
+    padding: 2em;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #263d43;
+    color: #ffffff;
+    text-align: center;
+    padding: 1em;
+}
+
+/* Logo Styling (shared between header and footer) */
+.logo {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 0;
+    width: 150px;
+    max-width: 100%;
+    height: auto; /* Responsive logo */
+}
+
+/* Textarea Styling */
+textarea {
+    width: 100%;
+    height: 30vh;
+    resize: none;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+/* Remove redundant list styles */
+nav ul {
+    list-style: none;
+    display: inline;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+/* Ensure padding and spacing is consistent */
+.footer-logo,
+.header-logo {
+    width: 100px;
+}
