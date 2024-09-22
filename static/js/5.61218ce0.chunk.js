@@ -1,2 +1,0 @@
-(this["webpackJsonpcapac-urcu-frontend"]=this["webpackJsonpcapac-urcu-frontend"]||[]).push([[5],{18:function(e,a,n){"use strict";n.r(a);var t=n(0),r=n.n(t);n(5);a.default=()=>r.a.createElement("main",null,r.a.createElement("section",{id:"home"},r.a.createElement("h2",null,"Capac Urcu - The Beauty of Nature"),r.a.createElement("p",null,"Discover the beauty and stories behind Capac Urcu. From our roots in Ecuador to our passion for bringing nature\u2019s best to Romania, our journey is just beginning.")))}}]);
-//# sourceMappingURL=5.61218ce0.chunk.js.map
