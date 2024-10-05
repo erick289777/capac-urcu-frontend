@@ -1,61 +1,68 @@
 import React from "react";
-import "../styles/styles.css"; // Import your stylesheet if you need it
+import { Link } from "react-router-dom";
+import "../styles/styles.css";
 
 const About = () => {
   return (
     <main>
       <section id="about">
-        <h1>About Capac Urcu</h1>
+        <h2>About Capac Urcu</h2>
         <p>
-          Capac Urcu is a company born from a deep appreciation of Ecuador’s unique flavors and natural beauty. 
-          We aim to bring the essence of Ecuador to Romania, starting with premium imports that capture the rich 
-          diversity of our homeland. At Capac Urcu, we are committed to sharing authentic experiences and high-quality 
-          products that reflect our passion for connecting cultures through taste.
+          Capac Urcu was founded with the goal of bridging the gap between organic production and environmental impact. Our journey starts in Ecuador, a country known for its rich biodiversity and high-quality agricultural products. By partnering with organic producers, we aim to bring the best of Ecuador's products to new markets while making a positive contribution to conservation efforts.
         </p>
+      </section>
 
-        <h2>Our Vision</h2>
+      <section id="our-vision">
+        <h3>Our Vision</h3>
         <p>
-          Our vision is to become a bridge between Ecuador and Romania, offering exceptional products that celebrate 
-          the heritage and authenticity of Ecuadorian craftsmanship. We strive to build lasting connections, support 
-          sustainable practices, and introduce a world of unique flavors to our customers. By blending tradition 
-          with quality, we aim to create an unforgettable experience in every product we offer.
+          We envision a sustainable world where businesses are a force for good—benefiting communities, preserving ecosystems, and promoting organic agriculture. At Capac Urcu, our goal is to create a supply chain that doesn't just deliver products, but also generates positive change by supporting environmental projects and community development.
         </p>
+      </section>
 
-        <h2>Our Story</h2>
+      <section id="our-mission">
+        <h3>Our Mission</h3>
         <p>
-          Capac Urcu was born out of a deep love for Ecuador, a place I proudly call paradise. With its diverse landscapes, 
-          rich culture, and exquisite flavors, Ecuador has always inspired me. My passion for mountaineering and rock 
-          climbing has led me to the majestic peaks of the Altar volcano, my favorite mountain and the heart of my inspiration. 
-          After moving to Romania in 2018, I felt a growing desire to share the beauty of my homeland. Capac Urcu is my way of 
-          bringing a piece of Ecuador to the world, one authentic flavor at a time.
+          Our mission is to collaborate with organic producers to bring high-quality products from Ecuador to the world, starting with chocolate and coffee. We aim to use these products as a vehicle for broader impact—reinvesting in projects like reforestation, conservation education, and community empowerment.
         </p>
+      </section>
 
-        <h2>Values and Commitment</h2>
-        <p>
-          At Capac Urcu, we value authenticity, quality, and sustainability. We are committed to ethical sourcing, supporting 
-          local producers, and bringing you products that reflect the heart of Ecuador. Our dedication to excellence ensures 
-          that every item we offer is crafted with care and respect for the environment and the communities we work with. We 
-          believe in building trust through transparency and delivering only the best from Ecuador to your doorstep.
-        </p>
+      <section id="what-we-stand-for">
+        <h3>What We Stand For</h3>
+        <ul>
+          <li>
+            <strong>Sustainability:</strong> We work only with producers who follow organic and sustainable farming practices, ensuring that our supply chain respects both people and the environment.
+          </li>
+          <li>
+            <strong>Community Empowerment:</strong> We are committed to supporting the communities we work with by providing opportunities for economic growth and knowledge sharing on sustainable practices.
+          </li>
+          <li>
+            <strong>Environmental Conservation:</strong> Our long-term goal is to invest in impactful environmental initiatives. We believe that through reforestation, conservation education, and awareness, we can contribute to preserving our planet's biodiversity.
+          </li>
+        </ul>
+      </section>
 
-        <h2>Future Plans</h2>
+      <section id="our-approach">
+        <h3>Our Approach</h3>
         <p>
-          Starting with coffee and chocolate, our journey is just beginning. We aim to expand our offerings to include more 
-          of Ecuador’s finest products, continually exploring new opportunities to bring unique flavors to our customers. 
-          Our goal is to grow thoughtfully, always maintaining the quality and authenticity that define Capac Urcu.
+          Our approach is rooted in collaboration. We work closely with farmers, suppliers, and partners who share our vision for sustainability and quality. We believe that transparency and mutual growth are the keys to building a better supply chain. By supporting organic farming practices and investing in community and environmental initiatives, we aim to create a model that goes beyond business as usual.
         </p>
+      </section>
 
-        <h2>Contact Us</h2>
+      <section id="our-story">
+        <h3>Our Story</h3>
         <p>
-          We’d love to hear from you! For inquiries, partnerships, or more information about Capac Urcu, please reach out 
-          to us via email at{" "}
-          <a href="mailto:info@capacurcu.com" aria-label="Email Capac Urcu">
-            info@capacurcu.com
-          </a>, or fill out our{" "}
-          <a href="/contact" aria-label="Go to contact form">
-            contact form
-          </a>.
+          The idea for Capac Urcu came from a deep appreciation for nature's beauty and a desire to protect it. Founded by an Ecuadorian passionate about sustainable agriculture, our journey began with organic chocolate and coffee—two products that symbolize our connection to the earth. Today, we are taking our first steps in Romania, but our eyes are set on creating a global impact, one organic product at a time.
         </p>
+      </section>
+
+      <section id="get-involved">
+        <h3>Get Involved</h3>
+        <p>
+          We're always looking to partner with others who share our commitment to sustainability and quality. Whether you're an organic producer or a supporter of conservation initiatives, we'd love to connect. Together, we can make a difference.
+        </p>
+        <Link to="/contact">
+          <button>Connect with Us</button>
+        </Link>
       </section>
     </main>
   );

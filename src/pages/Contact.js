@@ -1,20 +1,22 @@
 import React, { useState } from "react";
-import "../styles/styles.css"; // Import your stylesheet if you need it
+import "../styles/styles.css"; 
 
 const Contact = () => {
   const [formSubmitted, setFormSubmitted] = useState(false);
 
   const handleSubmit = (e) => {
-    e.preventDefault(); // Prevent the default form submission
+    e.preventDefault(); 
     setFormSubmitted(true);
-    e.target.submit(); // Proceed with actual submission to Formspree
+    e.target.submit(); 
   };
 
   return (
     <main>
       <section id="contact">
-        <h1>Contact Us</h1>
-        <p>If you have any questions, inquiries, or would like to know more about Capac Urcu, feel free to reach out to us!</p>
+        <h2>Get in Touch</h2>
+        <p>
+          Whether you're an organic producer, potential partner, or supporter of conservation initiatives, we'd love to hear from you. Let's discuss how we can work together to create a positive impact on both the environment and communities.
+        </p>
 
         <form action="https://formspree.io/f/meojbaed" method="POST" onSubmit={handleSubmit}>
           <label htmlFor="name">Your Name:</label><br />
@@ -31,9 +33,12 @@ const Contact = () => {
           <button type="submit">Send Message</button>
         </form>
 
-        {formSubmitted && <p>Thank you for submitting your message!</p>}
+        {formSubmitted && <p>Thank you for reaching out! We will get back to you as soon as possible.</p>}
 
-        <p>You can also reach us via email at: <a href="mailto:info@capacurcu.com">info@capacurcu.com</a></p>
+        <p>
+          You can also reach us via email at:{" "}
+          <a href="mailto:info@capacurcu.com">info@capacurcu.com</a>
+        </p>
       </section>
     </main>
   );

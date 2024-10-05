@@ -1,8 +1,10 @@
 /* General Styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #ffffff;
-    color: #273b42;
+    background-color: #F4E3C7;
+    /* Cream Beige */
+    color: #4B3832;
+    /* Warm Espresso */
 }
 
 /* Header Styling */
@@ -11,8 +13,10 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #253e42;
-    color: #ffffff;
+    background-color: #8A6E44;
+    /* Dark Gold */
+    color: #F4E3C7;
+    /* Cream Beige */
     padding: 20px;
     text-align: center;
 }
@@ -31,14 +35,17 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fdfdfd;
+    color: #F4E3C7;
+    /* Cream Beige */
     text-decoration: none;
-    font-size: 1.125rem; /* Using rem for scalability */
+    font-size: 1.125rem;
+    /* Using rem for scalability */
     font-weight: bold;
 }
 
 nav ul li a:hover {
-    color: #bdc3c7;
+    color: #A58F7F;
+    /* Soft Taupe */
 }
 
 /* Section Styling */
@@ -48,8 +55,10 @@ section {
 
 /* Footer Styling */
 footer {
-    background-color: #263d43;
-    color: #ffffff;
+    background-color: #8A6E44;
+    /* Dark Gold */
+    color: #F4E3C7;
+    /* Cream Beige */
     text-align: center;
     padding: 1em;
 }
@@ -61,7 +70,13 @@ footer {
     padding: 10px 0;
     width: 150px;
     max-width: 100%;
-    height: auto; /* Responsive logo */
+    height: auto;
+    /* Responsive logo */
+}
+
+.footer-logo,
+.header-logo {
+    width: 100px;
 }
 
 /* Textarea Styling */
@@ -71,20 +86,79 @@ textarea {
     resize: none;
     box-sizing: border-box;
     padding: 10px;
+    background-color: #D4B483;
+    /* Nude Gold */
+    color: #4B3832;
+    /* Warm Espresso */
+    border: 1px solid #A58F7F;
+    /* Soft Taupe */
+}
+
+/* CTA Buttons Styling */
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    /* Horizontally center buttons */
+    align-items: center;
+    /* Vertically center buttons */
+    gap: 20px;
+    /* Adds space between the buttons */
+    margin-top: 20px;
+    /* Optional: Add space above the buttons */
+}
+
+.cta-buttons button {
+    padding: 10px 20px;
+    /* Optional: Add padding to the buttons */
+    font-size: 16px;
+    /* Optional: Adjust the font size */
+    background-color: #8A6E44;
+    /* Dark Gold */
+    color: #F4E3C7;
+    /* Cream Beige */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cta-buttons button:hover {
+    background-color: #A58F7F;
+    /* Soft Taupe on hover */
 }
 
 /* Remove redundant list styles */
 nav ul {
     list-style: none;
-    display: inline;
+    padding: 0;
+    margin: 0;
 }
 
-nav ul li {
-    margin-right: 20px;
+/* Consistent Spacing */
+textarea,
+input[type="text"],
+input[type="email"] {
+    padding: 10px;
+    border: 1px solid #A58F7F;
+    /* Soft Taupe */
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 15px;
 }
 
-/* Ensure padding and spacing is consistent */
-.footer-logo,
-.header-logo {
-    width: 100px;
+/* Form Submit Button Styling */
+form button[type="submit"] {
+    background-color: #8A6E44;
+    /* Dark Gold */
+    color: #F4E3C7;
+    /* Cream Beige */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button[type="submit"]:hover {
+    background-color: #A58F7F;
+    /* Soft Taupe */
 }
