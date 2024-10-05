@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkcapac_urcu_frontend=self.webpackChunkcapac_urcu_frontend||[]).push([[936],{936:(e,r,n)=>{n.r(r),n.d(r,{default:()=>s});n(43),n(612);var a=n(579);const s=()=>(0,a.jsx)("main",{children:(0,a.jsxs)("section",{id:"home",children:[(0,a.jsx)("h2",{children:"Capac Urcu - The Beauty of Nature"}),(0,a.jsx)("p",{children:"Discover the beauty and stories behind Capac Urcu. From our roots in Ecuador to our passion for bringing nature\u2019s best to Romania, our journey is just beginning."})]})})}}]);
-//# sourceMappingURL=936.44fd3d23.chunk.js.map
