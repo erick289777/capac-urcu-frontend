@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.f296dc29.css",
-    "main.js": "/static/js/main.5c682cdc.js",
-    "static/js/936.3035abb9.chunk.js": "/static/js/936.3035abb9.chunk.js",
-    "static/js/970.4604724e.chunk.js": "/static/js/970.4604724e.chunk.js",
+    "main.css": "/static/css/main.9dc3c0ee.css",
+    "main.js": "/static/js/main.26452c0c.js",
+    "static/js/936.590218bd.chunk.js": "/static/js/936.590218bd.chunk.js",
+    "static/js/970.9d12f98a.chunk.js": "/static/js/970.9d12f98a.chunk.js",
     "static/js/615.34a9a55e.chunk.js": "/static/js/615.34a9a55e.chunk.js",
-    "static/media/forest.jpg": "/static/media/forest.c08f7144749a666aac08.jpg",
-    "static/media/bird.jpg": "/static/media/bird.41c1cd071b066f1bcbd7.jpg",
-    "static/media/river.jpg": "/static/media/river.aa240eda71b49a08e0ca.jpg",
-    "static/media/achupaya.jpg": "/static/media/achupaya.0fb47b7047d5e749a368.jpg",
-    "static/media/flower.jpg": "/static/media/flower.373fa880e5a620f06b40.jpg",
-    "static/media/mountain.jpg": "/static/media/mountain.fb7528dd50a271b6cb89.jpg",
+    "static/media/forest.jpg": "/static/media/forest.cf14234cab1588c0619a.jpg",
+    "static/media/bird.jpg": "/static/media/bird.9cca0637ac9d9777f223.jpg",
+    "static/media/river.jpg": "/static/media/river.fa2982a20221c9d93677.jpg",
+    "static/media/achupaya.jpg": "/static/media/achupaya.193a7842a152777de453.jpg",
+    "static/media/flower.jpg": "/static/media/flower.7e31283890f97a1cd98c.jpg",
+    "static/media/mountain.jpg": "/static/media/mountain.306d7ca28e3e46c5f30a.jpg",
     "static/media/logo.png": "/static/media/logo.4ab698398004e9016c70.png",
     "index.html": "/index.html",
-    "main.f296dc29.css.map": "/static/css/main.f296dc29.css.map",
-    "main.5c682cdc.js.map": "/static/js/main.5c682cdc.js.map",
-    "936.3035abb9.chunk.js.map": "/static/js/936.3035abb9.chunk.js.map",
-    "970.4604724e.chunk.js.map": "/static/js/970.4604724e.chunk.js.map",
+    "main.9dc3c0ee.css.map": "/static/css/main.9dc3c0ee.css.map",
+    "main.26452c0c.js.map": "/static/js/main.26452c0c.js.map",
+    "936.590218bd.chunk.js.map": "/static/js/936.590218bd.chunk.js.map",
+    "970.9d12f98a.chunk.js.map": "/static/js/970.9d12f98a.chunk.js.map",
     "615.34a9a55e.chunk.js.map": "/static/js/615.34a9a55e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f296dc29.css",
-    "static/js/main.5c682cdc.js"
+    "static/css/main.9dc3c0ee.css",
+    "static/js/main.26452c0c.js"
   ]
 }
