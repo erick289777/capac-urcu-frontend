@@ -8,7 +8,7 @@ const Home = () => {
       <section id="home">
         <h2>Building a Sustainable Future Together</h2>
         <p>
-          Partnering to bring organic products from Ecuador to the world while investing in environmental initiatives. Our mission is about creating a sustainable supply chain that benefits both people and nature, starting from Ecuador and expanding globally.
+          We partner to bring Ecuador's organic products to the world while supporting environmental initiatives. Our mission is to create a sustainable supply chain that benefits both people and nature, starting locally and expanding globally.
         </p>
         <div className="cta-buttons">
           <Link to="/about">
@@ -23,7 +23,7 @@ const Home = () => {
       <section id="vision">
         <h3>Our Vision</h3>
         <p>
-          We are committed to sourcing organic products while making a positive impact on the environment. Our goal is to work with like-minded partners to support organic farming, community development, and conservation efforts.
+          Our vision is to source organic products to lower the impact to the environment. We aim to collaborate with partners to support sustainable farming, community growth, and conservation efforts.
         </p>
       </section>
 
@@ -31,13 +31,13 @@ const Home = () => {
         <h3>Why Work with Us</h3>
         <ul>
           <li>
-            <strong>Focus on Sustainability:</strong> We prioritize organic farming, ethical sourcing, and environmental care.
+            <strong>Sustainability First:</strong> We prioritize ethical sourcing, organic farming, and environmental care.
           </li>
           <li>
-            <strong>Making a Real Impact:</strong> Our work includes reforestation and community support initiatives to ensure a positive impact.
+            <strong>Making a Difference:</strong> We contribute to reforestation and community initiatives for lasting positive impact.
           </li>
           <li>
-            <strong>Sharing Our Journey:</strong> We share stories from our adventurers, highlighting the importance of conservation and the beauty of nature.
+            <strong>Sharing Our Stories:</strong> Our adventurers highlight the beauty of nature and the importance of conservation.
           </li>
         </ul>
       </section>
@@ -45,18 +45,20 @@ const Home = () => {
       <section id="partners">
         <h3>Our Ideal Partners</h3>
         <p>
-          We are looking for providers who practice organic and ethical farming and partners who want to support a model focused on sustainability and environmental impact. Whether you are a producer or want to support our initiatives, we’d love to collaborate.
+          We seek providers practicing organic and ethical farming and partners committed to sustainability. Whether you're a producer or a supporter, we'd love to collaborate.
         </p>
       </section>
 
       <section id="get-involved">
-        <h3>Let’s Work Together</h3>
+        <h3>Let's Work Together</h3>
         <p>
-          By working with us, you become part of an effort to bring organic products to new markets while making a positive environmental impact.
+          Join us in bringing organic products to new markets while making a positive environmental impact.
         </p>
-        <Link to="/contact">
-          <button>Get Involved</button>
-        </Link>
+        <div className="cta-buttons">
+          <Link to="/contact">
+            <button>Connect with Us</button>
+          </Link>
+        </div>
       </section>
     </main>
   );

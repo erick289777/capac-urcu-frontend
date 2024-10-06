@@ -1,6 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../styles/styles.css";
+import achupaya from "../assets/images/achupaya.jpg";
+import mountain from "../assets/images/mountain.jpg";
+import forest from "../assets/images/forest.jpg";
+import bird from "../assets/images/bird.jpg";
+import river from "../assets/images/river.jpg";
+import flower from "../assets/images/flower.jpg";
 
 const About = () => {
   return (
@@ -8,61 +14,75 @@ const About = () => {
       <section id="about">
         <h2>About Capac Urcu</h2>
         <p>
-          Capac Urcu was founded with the goal of bridging the gap between organic production and environmental impact. Our journey starts in Ecuador, a country known for its rich biodiversity and high-quality agricultural products. By partnering with organic producers, we aim to bring the best of Ecuador's products to new markets while making a positive contribution to conservation efforts.
+          Capac Urcu was founded to bridge the gap between organic production and environmental conservation. Our journey began in Ecuador, a country known for its rich biodiversity and quality agriculture. By collaborating with Ecuadorian producers, we bring the country’s finest offerings to new markets while contributing to both nature and communities.
         </p>
       </section>
 
-      <section id="our-vision">
-        <h3>Our Vision</h3>
-        <p>
-          We envision a sustainable world where businesses are a force for good—benefiting communities, preserving ecosystems, and promoting organic agriculture. At Capac Urcu, our goal is to create a supply chain that doesn't just deliver products, but also generates positive change by supporting environmental projects and community development.
-        </p>
-      </section>
-
-      <section id="our-mission">
-        <h3>Our Mission</h3>
-        <p>
-          Our mission is to collaborate with organic producers to bring high-quality products from Ecuador to the world, starting with chocolate and coffee. We aim to use these products as a vehicle for broader impact—reinvesting in projects like reforestation, conservation education, and community empowerment.
-        </p>
-      </section>
-
-      <section id="what-we-stand-for">
-        <h3>What We Stand For</h3>
-        <ul>
-          <li>
-            <strong>Sustainability:</strong> We work only with producers who follow organic and sustainable farming practices, ensuring that our supply chain respects both people and the environment.
-          </li>
-          <li>
-            <strong>Community Empowerment:</strong> We are committed to supporting the communities we work with by providing opportunities for economic growth and knowledge sharing on sustainable practices.
-          </li>
-          <li>
-            <strong>Environmental Conservation:</strong> Our long-term goal is to invest in impactful environmental initiatives. We believe that through reforestation, conservation education, and awareness, we can contribute to preserving our planet's biodiversity.
-          </li>
-        </ul>
-      </section>
-
-      <section id="our-approach">
-        <h3>Our Approach</h3>
-        <p>
-          Our approach is rooted in collaboration. We work closely with farmers, suppliers, and partners who share our vision for sustainability and quality. We believe that transparency and mutual growth are the keys to building a better supply chain. By supporting organic farming practices and investing in community and environmental initiatives, we aim to create a model that goes beyond business as usual.
-        </p>
-      </section>
+      <img src={river} alt="River" className="section-image" />
 
       <section id="our-story">
         <h3>Our Story</h3>
         <p>
-          The idea for Capac Urcu came from a deep appreciation for nature's beauty and a desire to protect it. Founded by an Ecuadorian passionate about sustainable agriculture, our journey began with organic chocolate and coffee—two products that symbolize our connection to the earth. Today, we are taking our first steps in Romania, but our eyes are set on creating a global impact, one organic product at a time.
+          Capac Urcu was born from a deep love for nature and a passion for sustainable living. Founded by an Ecuadorian mountaineer and rock climber, the inspiration for our name comes from the Altar volcano, known as "Capac Urcu" in the Inca language, which means "Great Mountain." This majestic peak in Ecuador, with its striking landscapes and untouched beauty, sparked a vision to protect and share the wonders of our planet. Starting in Romania, we aim to bring a piece of Ecuador's natural abundance to the world, while championing global environmental conservation.
         </p>
       </section>
+
+      <img src={flower} alt="Flower" className="section-image" />
+
+      <section id="our-vision">
+        <h3>Our Vision</h3>
+        <p>
+          We strive for a sustainable future where businesses actively support communities and ecosystems. Capac Urcu aims to build a supply chain that not only delivers high-quality products but also drives positive environmental and social impact through meaningful initiatives.
+        </p>
+      </section>
+
+      <img src={forest} alt="Forest" className="section-image" />
+
+      <section id="our-mission">
+        <h3>Our Mission</h3>
+        <p>
+          Our mission is to share Ecuador's organic treasures with the world while creating a positive impact on both people and the environment. We are taking our first steps by building partnerships and exploring opportunities for reforestation, community education, and sustainable practices, with the aim of making every initiative contribute to a greener future.
+        </p>
+      </section>
+
+      <img src={achupaya} alt="Achupaya" className="section-image" />
+
+      <section id="what-we-stand-for">
+        <h3>Our Values</h3>
+        <ul>
+          <li>
+            <strong>Sustainability:</strong> We source from producers who follow organic and sustainable practices, respecting both people and the environment.
+          </li>
+          <li>
+            <strong>Community Empowerment:</strong> We support communities by promoting economic growth and sharing knowledge on sustainable practices.
+          </li>
+          <li>
+            <strong>Environmental Conservation:</strong> We invest in impactful projects like reforestation and conservation education to preserve biodiversity.
+          </li>
+        </ul>
+      </section>
+
+      <img src={bird} alt="Bird" className="section-image" />
+
+      <section id="our-approach">
+        <h3>Our Approach</h3>
+        <p>
+          Collaboration is at the core of our approach. We partner with farmers, suppliers, and like-minded individuals who share our commitment to sustainability and quality. Through transparency, mutual growth, and support for organic farming, we aim to create a supply chain that contributes positively to the environment and society.
+        </p>
+      </section>
+
+      <img src={mountain} alt="Mountain in Ecuador" className="section-image" />
 
       <section id="get-involved">
         <h3>Get Involved</h3>
         <p>
-          We're always looking to partner with others who share our commitment to sustainability and quality. Whether you're an organic producer or a supporter of conservation initiatives, we'd love to connect. Together, we can make a difference.
+          If you share our vision for sustainability and quality, we'd love to hear from you. Whether you're an organic producer or a conservation advocate, let's work together to make a difference.
         </p>
-        <Link to="/contact">
-          <button>Connect with Us</button>
-        </Link>
+        <div className="cta-buttons">
+          <Link to="/contact">
+            <button>Connect with us</button>
+          </Link>
+        </div>
       </section>
     </main>
   );

@@ -1,31 +1,46 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #F4E3C7;
-    /* Cream Beige */
-    color: #4B3832;
-    /* Warm Espresso */
+    font-family: 'Poppins', Arial, sans-serif; /* Modern font */
+    background-color: #F4E3C7; /* Cream Beige */
+    color: #4B3832; /* Warm Espresso */
+    margin: 0; /* Remove default body margin for better full-width images */
+    line-height: 1.6; /* Improve readability */
+}
+
+/* Color Palette Addition */
+:root {
+    --nude-green: #A3B18A; /* Nude Green */
+    --cream-beige: #F4E3C7;
+    --warm-espresso: #4B3832;
+    --dark-gold: #8A6E44;
+    --soft-taupe: #A58F7F;
+    --light-gray: #ECECEC; /* Light gray for background elements */
 }
 
 /* Header Styling */
 header {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #8A6E44;
-    /* Dark Gold */
-    color: #F4E3C7;
-    /* Cream Beige */
+    align-items: center; /* Vertically center content */
+    justify-content: space-between; /* Space between logo and nav */
+    background-color: var(--dark-gold); /* Dark Gold */
+    color: var(--cream-beige); /* Cream Beige */
     padding: 20px;
-    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for header */
+    border-radius: 0 0 20px 20px; /* Smooth rounded bottom corners */
 }
 
 /* Navigation Menu */
+nav {
+    margin-left: auto; /* Push nav to far right side */
+}
+
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: center;
+    justify-content: center; /* Horizontally center items in nav */
+    align-items: center;
     padding: 0;
     margin: 0;
 }
@@ -35,48 +50,64 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #F4E3C7;
-    /* Cream Beige */
+    color: var(--cream-beige); /* Cream Beige */
     text-decoration: none;
-    font-size: 1.125rem;
-    /* Using rem for scalability */
+    font-size: 1.125rem; /* Using rem for scalability */
     font-weight: bold;
+    position: relative;
+    transition: color 0.4s ease-in-out; /* Smoother color transition */
 }
 
 nav ul li a:hover {
-    color: #A58F7F;
-    /* Soft Taupe */
+    color: var(--nude-green); /* Nude Green */
+}
+
+/* Underline effect on hover */
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: var(--nude-green);
+    transition: width 0.4s ease-in-out; /* Smoother underline transition */
+}
+
+nav ul li a:hover::after {
+    width: 100%;
 }
 
 /* Section Styling */
 section {
-    padding: 2em;
+    padding: 4em 2em; /* Increase padding for more whitespace */
+    background: var(--light-gray); /* Light gray background for section */
+    margin-bottom: 30px;
+    border-radius: 20px; /* Add rounded corners for a smoother appearance */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05); /* Add soft shadow for depth */
+    transition: background-color 0.4s ease-in-out, box-shadow 0.4s ease-in-out; /* Smooth background and shadow transitions */
+}
+
+section:hover {
+    background-color: #F8F5F0; /* Lighten the background on hover */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* Add depth on hover */
 }
 
 /* Footer Styling */
 footer {
-    background-color: #8A6E44;
-    /* Dark Gold */
-    color: #F4E3C7;
-    /* Cream Beige */
+    background-color: var(--dark-gold); /* Dark Gold */
+    color: var(--cream-beige); /* Cream Beige */
     text-align: center;
-    padding: 1em;
+    padding: 2em;
+    border-top: 4px solid var(--nude-green); /* Add a border to create separation */
+    border-radius: 20px 20px 0 0; /* Smooth rounded top corners */
 }
 
 /* Logo Styling (shared between header and footer) */
-.logo {
-    display: block;
-    margin: 0 auto;
-    padding: 10px 0;
+.header-logo, .footer-logo {
     width: 150px;
     max-width: 100%;
-    height: auto;
-    /* Responsive logo */
-}
-
-.footer-logo,
-.header-logo {
-    width: 100px;
+    height: auto; /* Responsive logo */
 }
 
 /* Textarea Styling */
@@ -85,80 +116,104 @@ textarea {
     height: 30vh;
     resize: none;
     box-sizing: border-box;
-    padding: 10px;
-    background-color: #D4B483;
-    /* Nude Gold */
-    color: #4B3832;
-    /* Warm Espresso */
-    border: 1px solid #A58F7F;
-    /* Soft Taupe */
+    padding: 12px;
+    background-color: var(--nude-green); /* Nude Green */
+    color: var(--warm-espresso); /* Warm Espresso */
+    border: 1px solid var(--soft-taupe); /* Soft Taupe */
+    border-radius: 10px; /* Add more rounded corners */
+    transition: background-color 0.4s ease-in-out, border 0.4s ease-in-out; /* Smooth transition for interactions */
+}
+
+textarea:focus {
+    outline: none; /* Remove default outline */
+    background-color: #C8D8B9; /* Lighter Nude Green on focus */
+    border-color: var(--dark-gold); /* Dark Gold border on focus */
 }
 
 /* CTA Buttons Styling */
 .cta-buttons {
     display: flex;
-    justify-content: center;
-    /* Horizontally center buttons */
-    align-items: center;
-    /* Vertically center buttons */
-    gap: 20px;
-    /* Adds space between the buttons */
-    margin-top: 20px;
-    /* Optional: Add space above the buttons */
+    justify-content: center; /* Horizontally center buttons */
+    align-items: center; /* Vertically center buttons */
+    gap: 20px; /* Adds space between the buttons */
+    margin-top: 20px; /* Optional: Add space above the buttons */
 }
 
 .cta-buttons button {
-    padding: 10px 20px;
-    /* Optional: Add padding to the buttons */
-    font-size: 16px;
-    /* Optional: Adjust the font size */
-    background-color: #8A6E44;
-    /* Dark Gold */
-    color: #F4E3C7;
-    /* Cream Beige */
+    padding: 12px 30px; /* Add more padding to buttons */
+    font-size: 16px; /* Adjust font size */
+    background-color: var(--dark-gold); /* Dark Gold */
+    color: var(--cream-beige); /* Cream Beige */
     border: none;
+    border-radius: 25px; /* Add rounded corners for a modern look */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: all 0.4s ease-in-out; /* Smoother transitions for hover effects */
 }
 
 .cta-buttons button:hover {
-    background-color: #A58F7F;
-    /* Soft Taupe on hover */
+    background-color: var(--nude-green); /* Nude Green */
+    color: var(--warm-espresso); /* Better contrast on hover */
+    transform: translateY(-3px); /* Subtle lift effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
 }
 
-/* Remove redundant list styles */
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-/* Consistent Spacing */
+/* Consistent Spacing for Input Elements */
 textarea,
 input[type="text"],
 input[type="email"] {
-    padding: 10px;
-    border: 1px solid #A58F7F;
-    /* Soft Taupe */
+    padding: 12px;
+    border: 1px solid var(--soft-taupe); /* Soft Taupe */
     box-sizing: border-box;
     width: 100%;
     margin-bottom: 15px;
+    border-radius: 10px; /* Rounded corners */
+    background-color: var(--cream-beige); /* Cream Beige */
+    transition: border-color 0.4s ease-in-out, background-color 0.4s ease-in-out; /* Smooth transitions */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+    outline: none; /* Remove default outline */
+    border-color: var(--dark-gold); /* Dark Gold on focus */
+    background-color: #EFEDE8; /* Slightly lighter background on focus */
 }
 
 /* Form Submit Button Styling */
 form button[type="submit"] {
-    background-color: #8A6E44;
-    /* Dark Gold */
-    color: #F4E3C7;
-    /* Cream Beige */
+    background-color: var(--dark-gold); /* Dark Gold */
+    color: var(--cream-beige); /* Cream Beige */
     border: none;
-    padding: 10px 20px;
+    padding: 12px 30px;
     font-size: 16px;
+    border-radius: 25px; /* Rounded corners */
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: all 0.4s ease-in-out; /* Smoother transitions */
 }
 
 form button[type="submit"]:hover {
-    background-color: #A58F7F;
-    /* Soft Taupe */
+    background-color: var(--nude-green); /* Nude Green */
+    color: var(--warm-espresso); /* Better contrast on hover */
+    transform: translateY(-3px); /* Lift effect */
+}
+
+/* Section Image Styling for Full Width */
+.section-image {
+    width: 100%;
+    height: auto; /* Maintain natural aspect ratio */
+    object-fit: cover; /* Maintain aspect ratio while covering container */
+    border-radius: 20px; /* Add more rounded corners for smoother visuals */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Add soft shadow */
+    margin: 40px 0;
+}
+
+/* Link Styling */
+a {
+    color: var(--nude-green); /* Nude Green for links */
+    text-decoration: none;
+    transition: color 0.4s ease-in-out; /* Smoother color transition */
+}
+
+a:hover {
+    color: var(--soft-taupe); /* Soft Taupe on hover */
 }
